@@ -1,0 +1,15 @@
+name: ZenPacks.example.ConnectToThisDevice
+
+classes:
+  CTTDDevice:
+    base: [zenpacklib.Device]
+    properties:
+      sshLink:
+        display: false
+        api_only: true
+        api_backendtype: method
+
+device_classes:
+  /CTTD:
+    zProperties:
+      zPythonClass: ZenPacks.example.ConnectToThisDevice.CTTDDevice
